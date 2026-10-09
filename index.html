@@ -1,25 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portafolio de Daniel Contreras, ingeniero de sistemas y desarrollador Full Stack (Java, Spring Boot, Angular)." />
 
-  <!--CSS Styles -->
-  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="stylesheet" href="assets/css/Loader_img.css" />
-  <!-- Favicons -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
   <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png" />
-
-  <!-- Animate CSS CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <title>Ingeniero Daniel Contreras</title>
 </head>
 
 <body>
-  <!-- Navbar -->
   <nav>
     <h1>Daniel Fernando Contreras Abella</h1>
     <ul class="navigation">
@@ -28,264 +24,205 @@
       <li><a href="#projects" class="nav-link">Proyectos</a></li>
       <li><a href="#contact" class="nav-link">Contacto</a></li>
     </ul>
-    <button class="burger-menu" id="burger-menu">
+    <button class="burger-menu" id="burger-menu" aria-label="Abrir menú">
       <ion-icon class="bars" name="menu-outline"></ion-icon>
-      <!-- <ion-icon class="times" name="close-outline"></ion-icon> -->
     </button>
   </nav>
+
   <div class="divPrincipal">
-    <!-- Hero Section -->
+    <!-- Hero -->
     <section class="hero" id="about">
-      <div class="blurred-img">
-        <div class="image-container">
-          <div class="loader-container">
-            <div class="loader"></div>
-          </div>
-          <img src="assets/images/yo.svg" alt="jane-doe" loading="lazy" class="hero-img image"/>
+      <div class="bio">
+        <h2 class="bio-title">Desarrollo software que reemplaza procesos manuales.</h2>
+        <p class="bio-sub">Daniel Contreras · Ingeniero de sistemas</p>
+        <p class="bio-text">
+          Tengo 27 años y soy ingeniero de sistemas graduado de la Universidad de Cundinamarca. Llevo 4 años
+          aprendiendo y desarrollando software, creando soluciones para los desafíos diarios de empresas y personas.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">Ver proyectos</a>
+          <a href="#contact" class="btn btn-ghost">Escribirme</a>
         </div>
       </div>
-      <div class="bio animate__animated animate__shakeX">
-        <h2 class="bio-title">¡Hola...!</h2>
-        <p class="bio-text">
-          Mi nombre es Daniel Fernando Contreras, tengo 27 años y soy ingeniero de sistemas graduado de la
-          Universidad de Cundinamarca. Durante los últimos 4 años, me he dedicado al aprendizaje y desarrollo
-          de software, lo que me ha proporcionado una valiosa experiencia en este apasionante campo.
-          <br>
-          A lo largo de mi trayectoria, he demostrado la capacidad de crear e implementar soluciones efectivas
-          para abordar los desafíos cotidianos tanto de empresas como de individuos. Mi enfoque se centra en
-          generar eficiencia y eficacia al optimizar los procesos manuales de las organizaciones, contribuyendo
-          así al mejoramiento continuo de las operaciones.
-        </p>
+
+      <div class="hero-visual">
+        <div class="blurred-img">
+          <div class="image-container">
+            <div class="loader-container">
+              <div class="loader"></div>
+            </div>
+            <img src="assets/images/yo.svg" alt="Retrato de Daniel Contreras" loading="lazy" class="hero-img image" />
+          </div>
+        </div>
+        <pre class="api-card" aria-label="Resumen de perfil en formato JSON"><span class="verb">GET</span> /api/daniel
+{
+  <span class="k">"rol"</span>: <span class="s">"Full Stack"</span>,
+  <span class="k">"experiencia"</span>: <span class="s">"4 años"</span>,
+  <span class="k">"backend"</span>: [<span class="s">"Java"</span>, <span class="s">"Spring Boot"</span>],
+  <span class="k">"frontend"</span>: [<span class="s">"Angular"</span>],
+  <span class="k">"disponible"</span>: <span class="b">true</span>
+}</pre>
       </div>
     </section>
 
     <!-- More about -->
     <section class="more-about">
       <h2>Más sobre mí</h2>
-      <p>
-        Soy un desarrollador Full Stack con cuatro años de experiencia laboral, durante los cuales he perfeccionado mi
-        destreza en herramientas de desarrollo de software y he cultivado un sólido dominio de bases de datos <b>SQL</b>. Mi
-        enfoque se centra en la creación de sitios web que fusionan un diseño de experiencia del cliente cautivador en
-        el front end con la programación y mantenimiento eficiente de la arquitectura interna en el back end.
-      </p>
-      <p>
-        Tengo una sólida trayectoria de 4 años en el desarrollo en <b>JAVA</b>, con experiencia destacada en el framework
-        Spring Boot. Además, cuento con habilidades en tecnologías complementarias como <b>JSP</b>, <b>JPA</b>, <b>JDBC</b>, <b>servlets</b> y
-        arquitectura <b>MVC</b>, así como en la implementación de patrones <b>DAO y VO.</b>
-        Durante los últimos 2 años, he consolidado mi experiencia trabajando con <b>Spring Boot</b> y <b>Angular</b>, centrándome en
-        la integración de <b>API</b> y la creación de API REST utilizando <b>JPA</b> y <b>Hibernate.</b> He participado activamente en
-        proyectos que involucran el consumo de APIs, así como en el desarrollo de APIs REST, utilizando mis habilidades.
-      </p>
-      <p>
-        Mi compromiso laboral se refleja en mi dedicación a la misión y visión de la organización para la que trabajo.
-        Busco contribuir con mi conocimiento y experiencia al equipo, fomentando un entorno colaborativo donde todos
-        puedan crecer y aprender juntos. Mi disposición para adquirir nuevos conocimientos y enfrentar nuevas
-        experiencias se alinea con mi deseo constante de mantenerme actualizado y en sintonía con las últimas tendencias
-        del sector.
-      </p>
-      <p>
-        En resumen, mi bagaje profesional respaldado por habilidades blandas como trabajo en equipo, comunicación
-        asertiva, capacidad analítica y resolución de problemas, junto con mi entusiasmo por aprender y mantenerme a la
-        vanguardia, me capacitan para prosperar y adaptarme en entornos laborales exigentes. Estoy en búsqueda de
-        desafíos más significativos en mi carrera, con el objetivo de continuar aprendiendo y contribuir con mis
-        habilidades de manera efectiva.
-      </p>
+      <div>
+        <p>
+          Soy desarrollador Full Stack con cuatro años de experiencia y un sólido dominio de bases de datos <b>SQL</b>.
+          Creo sitios web que combinan una buena experiencia de usuario en el front end con una arquitectura
+          eficiente y mantenible en el back end.
+        </p>
+        <p>
+          Llevo 4 años desarrollando en <b>JAVA</b>, con experiencia destacada en Spring Boot, además de <b>JSP</b>,
+          <b>JPA</b>, <b>JDBC</b>, <b>servlets</b>, arquitectura <b>MVC</b> y patrones <b>DAO y VO</b>. En los últimos
+          2 años me he enfocado en <b>Spring Boot</b> y <b>Angular</b>: integración y consumo de <b>API</b>, y creación
+          de API REST con <b>JPA</b> y <b>Hibernate</b>.
+        </p>
+        <p>
+          Me comprometo con la misión y visión de la organización donde trabajo y busco aportar a un entorno
+          colaborativo donde todos crezcan y aprendan. Me mantengo al día con las tendencias del sector.
+        </p>
+        <p>
+          Mis habilidades blandas son el trabajo en equipo, la comunicación asertiva, la capacidad analítica y la
+          resolución de problemas. Busco desafíos más grandes para seguir aprendiendo y aportar de forma efectiva.
+        </p>
+      </div>
     </section>
 
-    <!-- Skills section -->
+    <!-- Skills -->
     <section class="skills" id="skills">
       <h2 class="skill-header">Mis mejores habilidades</h2>
-
       <div class="skills-wrapper">
-        <div class="first-set animate__animated animate__pulse">
-          <img src="assets/icons/icons8-html-5.svg" alt="" loading="lazy" class="icon icon-card" />
-          <img src="assets/icons/icons8-css3.svg" alt="" loading="lazy" class="icon icon-card" />
-          <img src="assets/icons/icons8-bootstrap.svg" alt="" loading="lazy" class="icon icon-card" />
-          <img src="assets/icons/angular.svg" alt="" loading="lazy" class="icon icon-card" />
+        <div class="first-set">
+          <div class="skill"><img src="assets/icons/icons8-html-5.svg" alt="" loading="lazy" class="icon" />HTML5</div>
+          <div class="skill"><img src="assets/icons/icons8-css3.svg" alt="" loading="lazy" class="icon" />CSS3</div>
+          <div class="skill"><img src="assets/icons/icons8-bootstrap.svg" alt="" loading="lazy" class="icon" />Bootstrap</div>
+          <div class="skill"><img src="assets/icons/angular.svg" alt="" loading="lazy" class="icon" />Angular</div>
         </div>
-
-        <div class="second-set animate__animated animate__pulse">
-          <img src="assets/icons/icons8-javascript.svg" alt="" loading="lazy" class="icon icon-card" />
-          <img src="assets/icons/java.svg" alt="" loading="lazy" class="icon icon-card" />
-          <img src="assets/icons/spring.svg" alt="" loading="lazy" class="icon icon-card" />
-          <img src="assets/icons/icons8-git.svg" alt="" loading="lazy" class="icon icon-card" />
+        <div class="second-set">
+          <div class="skill"><img src="assets/icons/icons8-javascript.svg" alt="" loading="lazy" class="icon" />JavaScript</div>
+          <div class="skill"><img src="assets/icons/java.svg" alt="" loading="lazy" class="icon" />Java</div>
+          <div class="skill"><img src="assets/icons/spring.svg" alt="" loading="lazy" class="icon" />Spring Boot</div>
+          <div class="skill"><img src="assets/icons/icons8-git.svg" alt="" loading="lazy" class="icon" />Git</div>
         </div>
       </div>
     </section>
 
-    <!-- Projects section -->
+    <!-- Projects -->
     <section class="projects" id="projects">
-      <h2 class="projects-title">Algunos de mis Proyectos</h2>
+      <h2 class="projects-title">Algunos de mis proyectos</h2>
       <div class="projects-container">
-        <div class="project-container project-card">
+        <article class="project-container project-card">
           <div class="image-container">
-            <div class="loader-container">
-              <div class="loader"></div>
-            </div>
-            <img src="assets/images/expenseTracker.png" alt="expense-tracker" loading="lazy" class="project-pic image"/>
+            <div class="loader-container"><div class="loader"></div></div>
+            <img src="assets/images/expenseTracker.png" alt="Captura del sistema Farmaser" loading="lazy" class="project-pic image" />
           </div>
-          <h3 class="project-title">Sistema de información Farmaser</h3>
-          <p class="project-details">
-            Diseño e implementación un sistema de información para la farmacia
-            <b>Farmaser</b> en Fusagasugá Cundinamarca. Ya que no contaba con
-            una herramienta para la gestión y administración de los implementos
-            farmacéuticos.
-          </p>
-          <button name="favorito" class="project-button" type="button" onclick="modal(1)"> Mas Informacion </button>
-        </div>
-        <div class="project-container project-card">
-          <div class="image-container">
-            <div class="loader-container">
-              <div class="loader"></div>
-            </div>
-            <img src="assets/images/netflixClone.png" alt="netflic-clone" loading="lazy" class="project-pic" />
-          </div> 
-          <br>
-          <h3 class="project-title">Opción de grado</h3>
-          <p class="project-details">
-            <br>
-            Desarrollo un módulo de opción de grado en la plataforma institucional,
-            según a un acuerdo interno de la <b>Universidad de Cundinamarca</b> con la finalidad
-            de que los estudiantes definan la metodología en el cual va a finalizar
-            pregrado o postgrado.<br><br><br>
-          </p>
-          <button name="favorito" class="project-button" type="button" onclick="modal(2)"> Mas Informacion </button>
-        </div>
-        <div class="project-container project-card">
-          <div class="image-container">
-            <div class="loader-container">
-              <div class="loader"></div>
-            </div>
-            <img src="assets/images/netflixClone.png" alt="netflic-clone" loading="lazy" class="project-pic" />
-          </div> 
-          <h3 class="project-title">Mesa de servicios</h3>
-          <p class="project-details">
-            Desarrolló un módulo de mesa de servicios para la plataforma institucional de la <b>Universidad de Cundinamarca</b>, 
-            centralizando la gestión de inconvenientes en los aplicativos mediante un sistema de tickets. Este módulo 
-            permitió registrar, asignar y dar seguimiento a los problemas reportados, mejorando la eficiencia en su resolución.
-          </p>
-          <button name="favorito" class="project-button" type="button" onclick="modal(3)"> Mas Informacion </button>
-        </div>
-        <div class="project-container project-card">
-          <div class="image-container">
-            <div class="loader-container">
-              <div class="loader"></div>
-            </div>
-            <img src="assets/images/Temporal.png" alt="greeny-earth" loading="lazy" class="project-pic image"/>
+          <div class="project-body">
+            <h3 class="project-title">Sistema de información Farmaser</h3>
+            <p class="project-details">
+              Diseño e implementación de un sistema de información para la farmacia <b>Farmaser</b> en Fusagasugá,
+              Cundinamarca, que no contaba con una herramienta para gestionar y administrar sus implementos farmacéuticos.
+            </p>
+            <button name="favorito" class="project-button" type="button" onclick="modal(1)">Más información</button>
           </div>
-          <h3 class="project-title">Muy Pronto nuevos proyectos...</h3>
-          <p class="project-details">
-            Muy Pronto cargare mas proyectos....
-          </p>
-          <button name="favorito" class="project-button" type="button" onclick="modal(4)"> Mas Informacion </button>
-        </div>
-      </div>
-      <div class="projects-container">
-        <div class="project-container project-card">
+        </article>
+
+        <article class="project-container project-card">
           <div class="image-container">
-            <div class="loader-container">
-              <div class="loader"></div>
-            </div>
-            <img src="assets/images/Temporal.png" alt="greeny-earth" loading="lazy" class="project-pic image"/>
+            <div class="loader-container"><div class="loader"></div></div>
+            <img src="assets/images/netflixClone.png" alt="Captura del módulo Opción de grado" loading="lazy" class="project-pic image" />
           </div>
-          <h3 class="project-title">Muy Pronto nuevos proyectos...</h3>
-          <p class="project-details">
-            Muy Pronto cargare mas proyectos....
-          </p>
-          <button name="favorito" class="project-button" type="button" onclick="modal(4)"> Mas Informacion </button>
-        </div>
-        <div class="project-container project-card">
+          <div class="project-body">
+            <h3 class="project-title">Opción de grado</h3>
+            <p class="project-details">
+              Módulo de opción de grado para la plataforma institucional de la <b>Universidad de Cundinamarca</b>,
+              según un acuerdo interno, para que los estudiantes de pregrado o posgrado definan la modalidad con la
+              que finalizarán sus estudios.
+            </p>
+            <button name="favorito" class="project-button" type="button" onclick="modal(2)">Más información</button>
+          </div>
+        </article>
+
+        <article class="project-container project-card">
           <div class="image-container">
-            <div class="loader-container">
-              <div class="loader"></div>
-            </div>
-            <img src="assets/images/Temporal.png" alt="greeny-earth" loading="lazy" class="project-pic image"/>
+            <div class="loader-container"><div class="loader"></div></div>
+            <img src="assets/images/netflixClone.png" alt="Captura del módulo Mesa de servicios" loading="lazy" class="project-pic image" />
           </div>
-          <h3 class="project-title">Muy Pronto nuevos proyectos...</h3>
-          <p class="project-details">
-            Muy Pronto cargare mas proyectos....
-          </p>
-          <button name="favorito" class="project-button" type="button" onclick="modal(4)"> Mas Informacion </button>
-        </div>
-        <div class="project-container project-card">
-          <div class="image-container">
-            <div class="loader-container">
-              <div class="loader"></div>
-            </div>
-            <img src="assets/images/Temporal.png" alt="greeny-earth" loading="lazy" class="project-pic image"/>
+          <div class="project-body">
+            <h3 class="project-title">Mesa de servicios</h3>
+            <p class="project-details">
+              Módulo de mesa de servicios para la plataforma institucional de la <b>Universidad de Cundinamarca</b>.
+              Centraliza los inconvenientes de los aplicativos con tickets que se registran, asignan y reciben
+              seguimiento, lo que agiliza su resolución.
+            </p>
+            <button name="favorito" class="project-button" type="button" onclick="modal(3)">Más información</button>
           </div>
-          <h3 class="project-title">Muy Pronto nuevos proyectos...</h3>
-          <p class="project-details">
-            Muy Pronto cargare mas proyectos....
-          </p>
-          <button name="favorito" class="project-button" type="button" onclick="modal(4)"> Mas Informacion </button>
-        </div>
+        </article>
+
+        <article class="project-container project-card project-soon">
+          <div class="project-body">
+            <h3 class="project-title">Muy pronto, más proyectos</h3>
+            <p class="project-details">Estoy preparando nuevos proyectos para publicar aquí.</p>
+            <button name="favorito" class="project-button" type="button" onclick="modal(4)">Más información</button>
+          </div>
+        </article>
       </div>
     </section>
 
-    <!-- Contact section -->
+    <!-- Contact -->
     <section class="contact" id="contact">
-      <h2>Envíame un mensaje</h2>
+      <div>
+        <h2>Envíame un mensaje</h2>
+        <p class="contact-intro">¿Tienes un proyecto o una oferta? Cuéntame y te respondo por correo.</p>
+      </div>
       <div class="contact-form-container">
-        <div class="contact-form">
-          <form action="https://formspree.io/f/mbjepgjr" method="POST">
-            <div class="form-control">
-              <label for="name">Nombre</label>
-              <input type="text" id="name" name="sender-name" placeholder="Escribe Tu Nombre" class="input-field"
-                required />
-            </div>
-            <div class="form-control">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="sender-email" placeholder="Escribe tu Correo" class="input-field"
-                required />
-            </div>
-            <div class="form-control">
-              <label for="message">Mensaje</label>
-              <textarea id="message" cols="60" rows="10" placeholder="Escribe tu mensaje" name="message"
-                class="input-field" required></textarea>
-            </div>
-            <input type="submit" value="Enviar" id="submit-btn" class="submit-btn" />
-          </form>
-        </div>
+        <form action="https://formspree.io/f/mbjepgjr" method="POST">
+          <div class="form-control">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="sender-name" placeholder="Escribe tu nombre" class="input-field" required />
+          </div>
+          <div class="form-control">
+            <label for="email">Correo</label>
+            <input type="email" id="email" name="sender-email" placeholder="Escribe tu correo" class="input-field" required />
+          </div>
+          <div class="form-control">
+            <label for="message">Mensaje</label>
+            <textarea id="message" rows="6" placeholder="Escribe tu mensaje" name="message" class="input-field" required></textarea>
+          </div>
+          <input type="submit" value="Enviar mensaje" id="submit-btn" class="submit-btn" />
+        </form>
       </div>
     </section>
   </div>
 
-
-  <!-- Social accounts - Fixed to the right -->
+  <!-- Social accounts -->
   <div class="socials">
-    <a href="https://www.instagram.com/danielcontreras205" target="_blank"><img src="assets/icons/icons8-instagram.gif"
-        alt="Instagram" loading="lazy" class="socicon" /></a>
-    <a href="https://www.linkedin.com/in/danielcontreras205/" target="_blank"><img
-        src="assets/icons/icons8-linkedin-circled.gif" alt="Linkedin" loading="lazy" class="socicon" /></a>
-    <a href="https://github.com/danielcontreras205" target="_blank"><img src="assets/icons/icons8-github.gif"
-        alt="Github" class="socicon" /></a>
+    <a href="https://www.instagram.com/danielcontreras205" target="_blank" rel="noopener"><img src="assets/icons/icons8-instagram.gif" alt="Instagram" loading="lazy" class="socicon" /></a>
+    <a href="https://www.linkedin.com/in/danielcontreras205/" target="_blank" rel="noopener"><img src="assets/icons/icons8-linkedin-circled.gif" alt="LinkedIn" loading="lazy" class="socicon" /></a>
+    <a href="https://github.com/danielcontreras205" target="_blank" rel="noopener"><img src="assets/icons/icons8-github.gif" alt="GitHub" class="socicon" /></a>
   </div>
-  <!--- modal -->
-  <div class="modalOculto" id="modal1" style="z-index: 1;">
+
+  <!-- Modal -->
+  <div class="modalOculto" id="modal1">
     <div class="contenedor">
       <label for="btn-modal" class="lbl-modal" id="cerrarModal">X</label>
-      <iframe class="experiencia" id="iframer" src=""></iframe>
+      <iframe class="experiencia" id="iframer" src="" title="Información del proyecto"></iframe>
     </div>
   </div>
-  <!-- Scroll to top -->
-  <i class="scroll-up" id="scroll-up"><img src="assets/icons/icons8-upward-arrow.gif" class="socicon up-arrow"
-      alt="" /></i>
 
-  <!-- Footer section -->
+  <!-- Scroll to top -->
+  <i class="scroll-up" id="scroll-up"><img src="assets/icons/icons8-upward-arrow.gif" class="socicon up-arrow" alt="Volver arriba" /></i>
+
   <footer>
     <p class="copy">&copy; DanielContreras205</p>
-    <br>
-    <p id="counter" style="display: none;">Esta página ha sido abierta con LocalStorage <span id="count">0</span> veces.
-    </p>
-    <p id="counterCookies">Esta página ha sido abierta Cookies <span id="countCookies">0</span> veces en el año</p>
-
+    <p id="counter" style="display: none;">Esta página ha sido abierta con LocalStorage <span id="count">0</span> veces.</p>
+    <p id="counterCookies">Esta página ha sido abierta <span id="countCookies">0</span> veces este año (cookies)</p>
   </footer>
 
-  <!-- Website scripts -->
   <script src="assets/js/function.js"></script>
   <script src="assets/js/app.js"></script>
-  <!-- Ion icons scripts -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
